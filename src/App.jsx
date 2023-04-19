@@ -1,12 +1,7 @@
 import React, { component } from 'react';
 
-class Welcome extends React.component{
-  constructor(){
-    super();
-  }
-  render(){
-    return <h1>Hello, Welcome to react</h1>
-  }
+const Welcome = (props) => {
+  return <h1>Meet the <i>{props.name}</i></h1>
 }
 
 function App() {
@@ -16,7 +11,7 @@ function App() {
       <article>
         <hgroup>
           <img src="images/group.svg" alt="StarGazers Group" />
-          <Welcome />
+          <Welcome name="Stars"/>
           <Welcome />
           <Welcome />
           <p>Members of an <b>intergalactic alliance</b><br />
